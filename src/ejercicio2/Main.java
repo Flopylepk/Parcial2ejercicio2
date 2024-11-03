@@ -60,7 +60,7 @@ public class Main {
 						if (gerente.getNombre().isEmpty()) {
 							JOptionPane.showMessageDialog(null, "Usted no se registro");
 						}else {
-							lista=gerente.CalcularResultados(drama, comedia, accion, lista, cliente.getAutor1(), cliente.getAutor1(), cliente.getAutor3(),compra);
+							lista=gerente.CalcularResultados(drama, comedia, accion, lista, cliente.getAutor1(), cliente.getAutor2(), cliente.getAutor3(),compra);
 						}
 						break;
 					case 4:
@@ -94,7 +94,7 @@ public class Main {
 				//CLIENTE
 				do {
 					opcionC=JOptionPane.showOptionDialog(null, "elija que hacer", null, 0, 0, null, menuC, menuC[0]);
-					switch (opcionG) {
+					switch (opcionC) {
 					case 0:
 						//registrarse
 						if (cliente.getNombre().isEmpty()) {
@@ -152,7 +152,7 @@ public class Main {
 						JOptionPane.showMessageDialog(null, "nos vemos mas tarde");
 						break;
 					}
-				} while (opcionG!=6);
+				} while (opcionC!=6);
 				break;
 			case 2:
 				//salir

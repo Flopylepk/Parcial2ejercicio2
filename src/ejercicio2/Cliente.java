@@ -77,19 +77,19 @@ public class Cliente extends Usuario{
 				int opcionD=JOptionPane.showOptionDialog(null, "elija que libro quiere", null, 0, 0, null, librosD, librosD[0]);
 				switch (opcionD) {
 				case 0:
-						setAutor1(getAutor1()+1);
+						autor1=autor1+1;
 						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
 						lista=lista+drama.getLibro1()+"autor: German \n";
 					break;
 				case 1:
-						setAutor2(getAutor2()+1);
+						autor2=autor2+1;
 						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
 						lista=lista+drama.getLibro2()+"autor: Paula \n";
 					break;
 				case 2:
-					setAutor3(getAutor3()+1);
-					JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
-					lista=lista+drama.getLibro3()+"autor: Agustin \n";
+						autor3=autor3+1;
+						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
+						lista=lista+drama.getLibro3()+"autor: Agustin \n";
 					break;
 				}
 			}
@@ -105,19 +105,19 @@ public class Cliente extends Usuario{
 				int opcionA=JOptionPane.showOptionDialog(null, "elija que libro quiere", null, 0, 0, null, librosA, librosA[0]);
 				switch (opcionA) {
 				case 0:
-						setAutor1(getAutor1()+1);
+						autor1=autor1+1;
 						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
 						lista=lista+accion.getLibro1()+"autor: German \n";
 					break;
 				case 1:
-						setAutor2(getAutor2()+1);
+						autor2=autor2+1;
 						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
 						lista=lista+accion.getLibro2()+"autor: Paula \n";
 					break;
 				case 2:
-					setAutor3(getAutor3()+1);
-					JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
-					lista=lista+accion.getLibro3()+"autor: Agustin \n";
+						autor3=autor3+1;
+						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
+						lista=lista+accion.getLibro3()+"autor: Agustin \n";
 					break;
 				}
 			}
@@ -132,19 +132,19 @@ public class Cliente extends Usuario{
 				int opcionA=JOptionPane.showOptionDialog(null, "elija que libro quiere", null, 0, 0, null, librosC, librosC[0]);
 				switch (opcionA) {
 				case 0:
-						setAutor1(getAutor1()+1);
+						autor1=autor1+1;
 						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
 						lista=lista+comedia.getLibro1()+"autor: German \n";
 					break;
 				case 1:
-						setAutor2(getAutor2()+1);
+						autor2=autor2+1;
 						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
 						lista=lista+comedia.getLibro2()+"autor: Paula \n";
 					break;
 				case 2:
-					setAutor3(getAutor3()+1);
-					JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
-					lista=lista+comedia.getLibro3()+"autor: Agustin \n";
+						autor3=autor3+1;
+						JOptionPane.showMessageDialog(null, "Felicidades, espero que lo disfrute, vuelva a atras y puede compar mas si quiere");
+						lista=lista+comedia.getLibro3()+"autor: Agustin \n";
 					break;
 				}
 			}
