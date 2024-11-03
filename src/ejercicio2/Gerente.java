@@ -62,27 +62,27 @@ public class Gerente extends Usuario{
 			JOptionPane.showMessageDialog(null, "el cliente no compro nada");
 		}else {
 			if (drama.getGeneroD()>comedia.getGeneroC()&&comedia.getGeneroC()>accion.getGeneroA()) {
-				JOptionPane.showMessageDialog(null, "el genero mas elejido es el drama");
-				lista=lista+"el genero mas elejido es el drama \n";
+				JOptionPane.showMessageDialog(null, "el genero más elejido es el drama");
+				lista=lista+"el genero más elejido es el drama \n";
 			}else if (comedia.getGeneroC()>drama.getGeneroD()&&comedia.getGeneroC()>accion.getGeneroA()) {
-				JOptionPane.showMessageDialog(null, "el genro mas elegido es la comedia");
-				lista=lista+"el genro mas elegido es la comedia \n";
+				JOptionPane.showMessageDialog(null, "el genro más elegido es la comedia");
+				lista=lista+"el genero más elegido es la comedia \n";
 			}else if (accion.getGeneroA()>comedia.getGeneroC()&& accion.getGeneroA()>drama.getGeneroD()) {
-				JOptionPane.showMessageDialog(null, "el genro mas elegido es la accion");
-				lista=lista+ "el genro mas elegido es la accion \n";
+				JOptionPane.showMessageDialog(null, "el genro más elegido es la accion");
+				lista=lista+ "el genero más elegido es la accion \n";
 			}else {
 				JOptionPane.showMessageDialog(null, "algunos empataron en resultado");
 			}
 			
 			if (autor1>autor2&&autor1>autor3) {
-				JOptionPane.showMessageDialog(null, "Germán fue el autor mas vendido");
-				lista=lista+"Germán fue el autor mas vendido";
+				JOptionPane.showMessageDialog(null, "Germán fue el autor más vendido");
+				lista=lista+"Germán fue el autor más vendido";
 			} else if (autor2>autor1&&autor2>autor3) {
-				JOptionPane.showMessageDialog(null, "Paula fue el autor mas vendido");
-				lista=lista+"Paula fue el autor mas vendido";
+				JOptionPane.showMessageDialog(null, "Paula fue el autor más vendido");
+				lista=lista+"Paula fue el autor más vendido";
 			}else if (autor3>autor1&&autor3>autor2) {
-				JOptionPane.showMessageDialog(null, "Agustin fue el autor mas vendido");
-				lista=lista+"Agustin fue el autor mas vendido";
+				JOptionPane.showMessageDialog(null, "Agustin fue el autor más vendido");
+				lista=lista+"Agustin fue el autor más vendido";
 			}else {
 				JOptionPane.showMessageDialog(null, "algunos autores empataron");
 			}

@@ -47,21 +47,21 @@ public class Usuario {
 		switch (genero) {
 		case 0:
 			if (drama.getLibro1().isEmpty()) {
-				JOptionPane.showMessageDialog(null, "el gerente no registro este genero");
+				JOptionPane.showMessageDialog(null, "el gerente no registró este genero");
 			}else {
 				JOptionPane.showMessageDialog(null, drama);
 			}
 			break;
 		case 1:
 			if (accion.getLibro1().isEmpty()) {
-				JOptionPane.showMessageDialog(null, "el gerente no registro este genero");
+				JOptionPane.showMessageDialog(null, "el gerente no registró este genero");
 			}else {
 				JOptionPane.showMessageDialog(null, accion);
 			}
 			break;
 		case 2:
 			if (comedia.getLibro1().isEmpty()) {
-				JOptionPane.showMessageDialog(null, "el gerente no registro este genero");
+				JOptionPane.showMessageDialog(null, "el gerente no registró este genero");
 			}else {
 				JOptionPane.showMessageDialog(null, comedia);
 			}

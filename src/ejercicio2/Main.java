@@ -16,7 +16,7 @@ public class Main {
 		String lista="";
 		String compra="";
 		String [] menu= {"gerente", "cliente", "salir"};
-		String [] menuG= {"Registrarse", "Registrar generos","ver libros","calcular Resultados", "ver Resultados", "ver mi registro", "salir"};
+		String [] menuG= {"Registrarse", "Registrar géneros","ver libros","calcular Resultados", "ver Resultados", "ver mi registro", "salir"};
 		String [] menuC= {"Registrarse", "Comprar libros","ver compra","ver libros","ver mi registro","ver gerente" ,"salir"};
 		
 		int opcion=0;
@@ -69,7 +69,7 @@ public class Main {
 							JOptionPane.showMessageDialog(null, "Usted no se registro");
 						}else {
 							if (lista.isEmpty()) {
-								JOptionPane.showMessageDialog(null, "usted no calculo los resultados");
+								JOptionPane.showMessageDialog(null, "usted no calculó los resultados");
 							}else {
 								JOptionPane.showMessageDialog(null, lista);
 							}
@@ -117,7 +117,7 @@ public class Main {
 							JOptionPane.showMessageDialog(null, "Usted no se registro");
 						}else {
 							if (compra.isEmpty()) {
-								JOptionPane.showMessageDialog(null, "usted no hiso ninguna compra");
+								JOptionPane.showMessageDialog(null, "usted no hizo ninguna compra");
 							}else {
 								JOptionPane.showMessageDialog(null, compra);
 							}
