@@ -56,33 +56,38 @@ public class Gerente extends Usuario{
 		}
 	}
 	
-	public String CalcularResultados(Drama drama, Comedia comedia, Accion accion, String lista, int autor1, int autor2, int autor3) {
+	public String CalcularResultados(Drama drama, Comedia comedia, Accion accion, String lista, int autor1, int autor2, int autor3, String compra) {
 		
-		if (drama.getGeneroD()>comedia.getGeneroC()&&comedia.getGeneroC()>accion.getGeneroA()) {
-			JOptionPane.showMessageDialog(null, "el genero mas elejido es el drama");
-			lista=lista+"el genero mas elejido es el drama \n";
-		}else if (comedia.getGeneroC()>drama.getGeneroD()&&comedia.getGeneroC()>accion.getGeneroA()) {
-			JOptionPane.showMessageDialog(null, "el genro mas elegido es la comedia");
-			lista=lista+"el genro mas elegido es la comedia \n";
-		}else if (accion.getGeneroA()>comedia.getGeneroC()&& accion.getGeneroA()>drama.getGeneroD()) {
-			JOptionPane.showMessageDialog(null, "el genro mas elegido es la accion");
-			lista=lista+ "el genro mas elegido es la accion \n";
+		if (compra.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "el cliente no compro nada");
 		}else {
-			JOptionPane.showMessageDialog(null, "algunos empataron en resultado");
+			if (drama.getGeneroD()>comedia.getGeneroC()&&comedia.getGeneroC()>accion.getGeneroA()) {
+				JOptionPane.showMessageDialog(null, "el genero mas elejido es el drama");
+				lista=lista+"el genero mas elejido es el drama \n";
+			}else if (comedia.getGeneroC()>drama.getGeneroD()&&comedia.getGeneroC()>accion.getGeneroA()) {
+				JOptionPane.showMessageDialog(null, "el genro mas elegido es la comedia");
+				lista=lista+"el genro mas elegido es la comedia \n";
+			}else if (accion.getGeneroA()>comedia.getGeneroC()&& accion.getGeneroA()>drama.getGeneroD()) {
+				JOptionPane.showMessageDialog(null, "el genro mas elegido es la accion");
+				lista=lista+ "el genro mas elegido es la accion \n";
+			}else {
+				JOptionPane.showMessageDialog(null, "algunos empataron en resultado");
+			}
+			
+			if (autor1>autor2&&autor1>autor3) {
+				JOptionPane.showMessageDialog(null, "Germán fue el autor mas vendido");
+				lista=lista+"Germán fue el autor mas vendido";
+			} else if (autor2>autor1&&autor2>autor3) {
+				JOptionPane.showMessageDialog(null, "Paula fue el autor mas vendido");
+				lista=lista+"Paula fue el autor mas vendido";
+			}else if (autor3>autor1&&autor3>autor2) {
+				JOptionPane.showMessageDialog(null, "Agustin fue el autor mas vendido");
+				lista=lista+"Agustin fue el autor mas vendido";
+			}else {
+				JOptionPane.showMessageDialog(null, "algunos autores empataron");
+			}
 		}
 		
-		if (autor1>autor2&&autor1>autor3) {
-			JOptionPane.showMessageDialog(null, "Germán fue el autor mas vendido");
-			lista=lista+"Germán fue el autor mas vendido";
-		} else if (autor2>autor1&&autor2>autor3) {
-			JOptionPane.showMessageDialog(null, "Paula fue el autor mas vendido");
-			lista=lista+"Paula fue el autor mas vendido";
-		}else if (autor3>autor1&&autor3>autor2) {
-			JOptionPane.showMessageDialog(null, "Agustin fue el autor mas vendido");
-			lista=lista+"Agustin fue el autor mas vendido";
-		}else {
-			JOptionPane.showMessageDialog(null, "algunos autores empataron");
-		}
 		
 		return lista;
 	}
