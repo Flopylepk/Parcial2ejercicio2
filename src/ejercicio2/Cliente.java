@@ -64,7 +64,7 @@ public class Cliente extends Usuario{
 	
 	public String ComprarLibros(Drama drama, Accion accion, Comedia comedia, String lista) {
 		
-		String [] generos={"drama", "accion", "comedia","salir"};
+		String [] generos={"drama", "accion", "comedia"};
 		int genero=JOptionPane.showOptionDialog(null, "¿De qué genero quiete comprar?", null, 0, 0, null, generos, generos[0]);
 		switch (genero) {
 		case 0:
@@ -154,4 +154,34 @@ public class Cliente extends Usuario{
 		}
 		return lista;
 	}
+	
+	public void VerLibros(Drama drama, Accion accion, Comedia comedia) {
+		String [] generos={"drama", "accion", "comedia"};
+		int genero=JOptionPane.showOptionDialog(null, "¿De qué genero quiere ver sus libros?", null, 0, 0, null, generos, generos[0]);
+		switch (genero) {
+		case 0:
+			if (drama.getLibro1().isEmpty()) {
+				JOptionPane.showMessageDialog(null, "el gerente no registro este genero");
+			}else {
+				JOptionPane.showMessageDialog(null, drama);
+			}
+			break;
+		case 1:
+			if (accion.getLibro1().isEmpty()) {
+				JOptionPane.showMessageDialog(null, "el gerente no registro este genero");
+			}else {
+				JOptionPane.showMessageDialog(null, accion);
+			}
+			break;
+		case 2:
+			if (comedia.getLibro1().isEmpty()) {
+				JOptionPane.showMessageDialog(null, "el gerente no registro este genero");
+			}else {
+				JOptionPane.showMessageDialog(null, comedia);
+			}
+			break;
+			
+		}
+	}
+	
 }

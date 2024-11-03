@@ -3,12 +3,10 @@ package ejercicio2;
 public class Drama extends Genero{
 	private int generoD;
 
-	public Drama(String libro1, String auto1, int autor1, String libro2, String auto2, int autor2, String libro3,
-			String auto3, int autor3, double precio) {
-		super(libro1, auto1, autor1, libro2, auto2, autor2, libro3, auto3, autor3, precio);
+
+	public Drama(String libro1, String libro2, String libro3) {
+		super(libro1, libro2, libro3);
 		this.generoD = 0;
-		
-		
 	}
 
 	public int getGeneroD() {

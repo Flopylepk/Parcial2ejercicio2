@@ -6,14 +6,11 @@ public class Genero {
 	private String libro1;
 	private String libro2;
 	private String libro3;
-	private double precio;
 	
-	public Genero(String libro1, String auto1, int autor1, String libro2, String auto2, int autor2, String libro3,
-			String auto3, int autor3, double precio) {
+	public Genero(String libro1, String libro2, String libro3) {
 		this.libro1 = libro1;
 		this.libro2 = libro2;
 		this.libro3 = libro3;
-		this.precio = precio;
 	}
 
 	public String getLibro1() {
@@ -43,25 +40,18 @@ public class Genero {
 	}
 
 
-	public double getPrecio() {
-		return precio;
-	}
 
-	public void setPrecio(double precio) {
-		this.precio = precio;
-	}
 
 	@Override
 	public String toString() {
 		return "Genero [libro1=" + libro1 +", libro2=" + libro2
-				+", libro3=" + libro3 + ", precio=" + precio + "]";
+				+", libro3=" + libro3 + "]";
 	}
 	
 	public void Registrar() {
 		libro1=validarCaracteres("ingrese el nombre del libro1");
 		libro2=validarCaracteres("ingrese el nombre del libro2");
 		libro3=validarCaracteres("ingrese el nombre del libro3");
-		precio=validarNumeros("ingrese el precio de este genero");
 	}
 	
 	public static int validarNumeros(String mensaje) {
