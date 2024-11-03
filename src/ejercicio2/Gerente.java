@@ -23,7 +23,6 @@ public class Gerente extends Usuario{
 
 	@Override
 	public void Registrarse() {
-		// TODO Auto-generated method stub
 		super.Registrarse();
 	}
 	
